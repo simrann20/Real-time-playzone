@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">          
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <head>
+
+<style>
+           div{
+                     width :800px;
+                    height: 200px; 
+                    padding: 20px;
+                    margin: 10px; 
+                }
+                
+               #mycanvas{
+               width: 600px;
+               height:500px;
+               background-color: black;
+               border: 5px solid orange;
+               margin :50px;
+               
+               }
+               
+            </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css"  rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  
+</head>
+<body>
+    <table  border="4px" cellspacing="10" cellpadding="10">
+
+    <tr>
+
+    <th><h1>GAME ZONE</h1></th>
+    <th><h1>CHAT ZONE</h1></th>
+
+    </tr>
+    <tr>
+
+         
+        <td style="background-color:blanchedalmond">
+            <canvas id ="mycanvas" ></canvas>
+             
+         
+        </td>
+        <td style="background-color:teal">
+
+
+
+           <h3> LOGIN here TO CHAT AND HAVE FUN <br>WITH YOUR FRIENDS :-D </h3>
+              <br>
+              <br>
+                <div id="loginform">
+                        <input id="username">
+                        <button id="login" >LOGIN</button>
+                      </div>
+                    
+                      <div id="chatbox">
+                        <input id="msg">
+                        <button id="send">SEND</button>
+                    
+                        <ul id="chats">
+                    
+                        </ul>
+                      </div>
+
+        </td>
+
+    </tr>
+        </table>
+        <script src="script.js"></script>
+        <script src="snakes.js"></script>
+</body>
+</html>
